@@ -75,7 +75,7 @@ const SearchPage = () => {
                 onClick={() => handleCategoryChange(category)}
                 className={`px-4 py-2 rounded-full font-medium transition-all duration-300 ${
                   selectedCategory === category
-                    ? 'bg-gradient-to-r from-pink-500 to-rose-500 text-white shadow-lg'
+                    ? 'liquid-glass-button text-pink-700 shadow-lg'
                     : 'bg-gray-100 text-gray-700 hover:bg-pink-100 hover:text-pink-600'
                 }`}
               >
@@ -89,14 +89,12 @@ const SearchPage = () => {
         {filteredProducts.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {filteredProducts.map((product) => (
-              <div key={product.id} className="bg-white rounded-xl shadow-lg card-hover overflow-hidden">
+              <div key={product.id} className="liquid-glass-card rounded-xl shadow-lg card-hover overflow-hidden">
                 <div className="relative">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-64 object-cover cursor-pointer"
+                  <div className="liquid-glass-image w-full h-64 cursor-pointer"
                     onClick={() => goToProduct(product.id)}
-                  />
+                  >
+                  </div>
                   {!product.inStock && (
                     <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
                       <span className="bg-red-500 text-white px-4 py-2 rounded-lg font-semibold">
@@ -139,7 +137,7 @@ const SearchPage = () => {
                       disabled={!product.inStock}
                       className={`flex items-center gap-2 px-4 py-2 rounded-lg font-semibold transition-all duration-300 ${
                         product.inStock
-                          ? 'bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white transform hover:scale-105'
+                          ? 'liquid-glass-button text-pink-700 transform hover:scale-105'
                           : 'bg-gray-300 text-gray-500 cursor-not-allowed'
                       }`}
                     >

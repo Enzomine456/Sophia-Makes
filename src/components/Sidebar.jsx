@@ -99,10 +99,10 @@ const Sidebar = ({ isOpen, onClose }) => {
 
         {/* User Info */}
         {user._id ? (
-          <div className="p-6 border-b border-gray-200 bg-gradient-to-r from-pink-25 to-rose-25">
+          <div className="p-6 border-b border-gray-200 liquid-glass-card">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-gradient-to-r from-pink-400 to-rose-400 rounded-full flex items-center justify-center">
-                <User size={20} className="text-white" />
+              <div className="w-12 h-12 liquid-glass-button rounded-full flex items-center justify-center">
+                <User size={20} className="text-pink-600" />
               </div>
               <div className="flex-1">
                 <h3 className="font-semibold text-gray-800 truncate">{user.name}</h3>

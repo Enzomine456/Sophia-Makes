@@ -44,7 +44,7 @@ const Header = () => {
     <>
       <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
       
-      <header className="h-20 bg-gradient-to-r from-pink-400 via-rose-300 to-pink-200 shadow-lg sticky top-0 z-30 flex flex-col justify-center backdrop-blur-sm bg-opacity-95">
+      <header className="h-20 liquid-glass-hero shadow-lg sticky top-0 z-30 flex flex-col justify-center backdrop-blur-sm bg-opacity-95">
         {!(isSearchPage && isMobile) && (
           <div className="container mx-auto flex items-center px-4 justify-between">
             {/* Mobile Menu Button */}
@@ -59,10 +59,10 @@ const Header = () => {
             <div className="h-full flex items-center">
               <Link to={"/"} className="h-full flex justify-center items-center group">
                 <div className="flex items-center gap-2 transition-all duration-300 group-hover:scale-105">
-                  <div className="w-8 h-8 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full flex items-center justify-center animate-pulse">
-                    <Sparkles size={16} className="text-white" />
+                  <div className="w-8 h-8 liquid-glass-button rounded-full flex items-center justify-center animate-pulse">
+                    <Sparkles size={16} className="text-pink-600" />
                   </div>
-                  <div className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent">
+                  <div className="text-2xl lg:text-3xl font-bold text-liquid-glass text-pink-700">
                     Sophia Makes
                   </div>
                 </div>

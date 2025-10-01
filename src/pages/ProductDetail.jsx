@@ -205,7 +205,7 @@ const ProductDetail = () => {
             </div>
 
             {/* WhatsApp */}
-            <div className="bg-gradient-to-r from-green-50 to-green-100 rounded-xl p-6 border border-green-200">
+            <div className="liquid-glass-makeup rounded-xl p-6 border border-green-200">
               <h3 className="font-semibold text-gray-800 mb-2">
                 Dúvidas sobre este produto?
               </h3>

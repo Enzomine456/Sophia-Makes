@@ -69,7 +69,7 @@ const Cart = () => {
 
   if (items.length === 0) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-rose-50 flex items-center justify-center">
+      <div className="min-h-screen liquid-glass-bg flex items-center justify-center">
         <div className="text-center">
           <ShoppingBag size={64} className="mx-auto text-gray-400 mb-4" />
           <h2 className="text-2xl font-bold text-gray-800 mb-2">
@@ -90,7 +90,7 @@ const Cart = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-rose-50 py-8">
+    <div className="min-h-screen liquid-glass-bg py-8">
       <div className="container mx-auto px-4">
         <div className="flex items-center gap-4 mb-8">
           <button
@@ -106,12 +106,8 @@ const Cart = () => {
           {/* Lista de Produtos */}
           <div className="lg:col-span-2 space-y-4">
             {items.map((item) => (
-              <div key={item.id} className="bg-white rounded-xl shadow-lg p-6 flex flex-col sm:flex-row gap-4">
-                <img
-                  src={item.image}
-                  alt={item.name}
-                  className="w-full sm:w-24 h-48 sm:h-24 object-cover rounded-lg"
-                />
+              <div key={item.id} className="liquid-glass-card rounded-xl shadow-lg p-6 flex flex-col sm:flex-row gap-4">
+                <div className="liquid-glass-image w-full sm:w-24 h-48 sm:h-24 rounded-lg"></div>
                 
                 <div className="flex-1">
                   <h3 className="font-semibold text-lg text-gray-800 mb-1">
@@ -223,7 +219,7 @@ const Cart = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-pink-50 to-rose-50 rounded-xl p-6 border border-pink-200">
+            <div className="liquid-glass-card rounded-xl p-6 border border-pink-200">
               <h3 className="font-semibold text-gray-800 mb-2">
                 Vantagens da Sophia Makes
               </h3>

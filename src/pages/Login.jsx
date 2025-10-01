@@ -46,10 +46,10 @@ const Login = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-rose-50 flex items-center justify-center py-12 px-4">
+    <div className="min-h-screen liquid-glass-bg flex items-center justify-center py-12 px-4">
       <div className="max-w-md w-full space-y-8">
         <div className="text-center">
-          <div className="text-4xl font-bold text-gradient mb-2">
+          <div className="text-4xl font-bold text-liquid-glass mb-2">
              Sophia Makes
           </div>
           <h2 className="text-3xl font-bold text-gray-900">

@@ -79,10 +79,10 @@ const Footer = () => {
             {/* Brand Section */}
             <div className="col-span-1 md:col-span-2 animate-fadeInLeft">
               <div className="flex items-center gap-3 mb-4 group">
-                <div className="w-10 h-10 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110">
-                  <Sparkles size={20} className="text-white" />
+                <div className="w-10 h-10 liquid-glass-button rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110">
+                  <Sparkles size={20} className="text-pink-600" />
                 </div>
-                <div className="text-2xl font-bold bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent">
+                <div className="text-2xl font-bold text-liquid-glass text-pink-700">
                   Sophia Makes
                 </div>
               </div>
