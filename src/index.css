@@ -265,11 +265,11 @@ body {
 /* Mobile optimizations */
 @media (max-width: 768px) {
   .card-hover {
-    @apply hover:scale-102 hover:shadow-lg;
+    @apply hover:scale-105 hover:shadow-lg;
   }
-  
+
   .btn-primary, .btn-secondary {
-    @apply hover:scale-102;
+    @apply hover:scale-105;
   }
 }
 
